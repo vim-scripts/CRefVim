@@ -4,9 +4,9 @@
 "** Type:      syntax file                                                  **
 "**                                                                         **
 "** Author:    Christian Habermann                                          **
-"**            christian(at)habermann-net(point)de                          **
+"**            christian (at) habermann-net (point) de                      **
 "**                                                                         **
-"** Copyright: (c) 2002, 2003 by Christian Habermann                        **
+"** Copyright: (c) 2002-2004 by Christian Habermann                         **
 "**                                                                         **
 "** License:   GNU General Public License 2 (GPL 2) or later                **
 "**                                                                         **
@@ -22,13 +22,18 @@
 "**            PURPOSE.                                                     **
 "**            See the GNU General Public License for more details.         **
 "**                                                                         **
-"** Version:   1.0.0                                                        **
-"**            tested under Linux and Win32, VIM and GVIM 6.1               **
+"** Version:   1.0.1                                                        **
+"**            tested under Linux and Win32, VIM and GVIM 6.2               **
 "**                                                                         **
 "** History:   0.1.0  12. Dec. 2002 - 21. Feb. 2003                         **
 "**              initial version, not released                              **
 "**            1.0.0   6. Apr. 2003                                         **
 "**              no changes, first release                                  **
+"**            1.0.1   3. Mar. 2004                                         **
+"**              marker changed from 0xa7 to $ in order to avoid problems   **
+"**              with fonts that use codes > 0x7f as multibyte characters   **
+"**              (e.g. Chinese, Korean, Japanese... fonts)                  **
+"**                                                                         **
 "**                                                                         **
 "*****************************************************************************
 "** Description:                                                            **
@@ -73,7 +78,7 @@ if tolower(expand("%:t"))=="crefvim.txt"
     syn match helpCRVSubDirective  "directive"           contained
 
 
-    syn match helpCRVignore     "§[a-zA-Z0-9\\\*/\._=()\-+%<>&\^|!~\?:,\[\];{}#\'\" ]\+§" contains=helpCRVstate
+    syn match helpCRVignore     "\$[a-zA-Z0-9\\\*/\._=()\-+%<>&\^|!~\?:,\[\];{}#\'\" ]\+\$" contains=helpCRVstate
     syn match helpCRVstate      "[a-zA-Z0-9\\\*/\._=()\-+%<>&\^|!~\?:,\[\];{}#\'\" ]\+"   contained contains=helpCRVSub.*
 
 

@@ -5,12 +5,12 @@
                                                                  *crefvimdoc*
                                Project CRefVim
                             ======================
-                                Version 1.0.2
-                                14. Dec. 2003
+                                Version 1.0.3
+                                4. Mar. 2004
                          
 
-                    (c) 2002, 2003 by Christian Habermann
-                     christian(at)habermann-net(point)de
+                     (c) 2002-2004 by Christian Habermann
+                   christian (at) habermann-net (point) de
 
 
   This is a C-reference manual especially designed for the text-editor Vim.
@@ -227,7 +227,7 @@ For Appendix B  BIBLIOGRAPHY  go to |crv-bibliography|
 Appendix C  COPYRIGHT & LICENSES                            *crvdoc-copyright*
 
 
-CRefVim is copyright (c) 2002, 2003 by Christian Habermann
+CRefVim is copyright (c) 2002-2004 by Christian Habermann
 
 The scripts of the project CRefVim are released under the GNU General Public
 License 2 (GPL 2) or later (see |crvdoc-licGPL| for license).
@@ -246,7 +246,7 @@ Free Software Foundation, Inc.
 
 Scripts of the project CRefVim:
 -------------------------------
-Copyright (c) 2002, 2003 by Christian Habermann.
+Copyright (c) 2002-2004 by Christian Habermann.
 
 
 All scripts of CRefVim are an entity called "program":
@@ -270,7 +270,7 @@ this program; if not, write to the Free Software Foundation, Inc.,
 
 Documents of the project CRefVim:
 ---------------------------------
-Copyright (c) 2002, 2003 by Christian Habermann.
+Copyright (c) 2002-2004 by Christian Habermann.
 
 
 This file and the C-reference manual is an entity called "document":
@@ -1595,7 +1595,7 @@ Appendix D  AUTHOR                                             *crvdoc-author*
 
 Author of CRefVim is Christian Habermann. For contact, write to:
 
-  christian(at)habermann-net(point)de
+  christian (at) habermann-net (point) de
 
 
 
@@ -1701,6 +1701,26 @@ Project CRefVim
       crefvimdoc.txt V 1.0.2      changed
       crefvim.txt    V 1.0.1      changed
       help.vim       V 1.0.0  not changed
+
+
+  - V 1.0.3  4. Mar. 2004
+    crefvimdoc.txt:  copyright and version-numbers updated
+    
+    crefvim.txt:     - marker for syntax-highlighting changed from 0xa7 to $
+                       in order to avoid problems with fonts that use
+                       codes > 0x7f as multibyte characters (e.g. Chinese,
+                       Korean, Japanese... fonts)
+                     - two typos fixed
+                     - three bad tags corrected
+
+    help.vim:        syntax-highlighting adapted to new marker
+
+    Consists of:
+      crefvim.vim    V 1.0.0  not changed
+      crefvimdoc.txt V 1.0.3      changed
+      crefvim.txt    V 1.0.2      changed
+      help.vim       V 1.0.1      changed
+
 
 
 ------------------------------------------------------------------------------
