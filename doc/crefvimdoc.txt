@@ -5,8 +5,8 @@
                                                                  *crefvimdoc*
                                Project CRefVim
                             ======================
-                                Version 1.0.0
-                                 6. Apr. 2003
+                                Version 1.0.1
+                                13. Apr. 2003
                          
 
                     (c) 2002, 2003 by Christian Habermann
@@ -122,9 +122,9 @@ Then start Vim and do:
 
 Finally the standard help syntax highlighting must be extended, so that
 the C-reference is viewed correctly. To do so, copy the file 'help.vim' to
-your local syntax/after directory:
-  Unix:    ~/.vim/syntax/after
-  Windows: c:\vimfiles\syntax\after
+your local after/syntax directory:
+  Unix:    ~/.vim/after/syntax
+  Windows: c:\vimfiles\after\syntax
 
 This extention of the help syntax file is only active for the C-reference 
 manual.
@@ -1674,6 +1674,19 @@ Project CRefVim
       crefvim.txt    V 1.0.0
       help.vim       V 1.0.0
 
+  - V 1.0.1  13. Apr. 2003
+    crefvimdoc.txt:  
+      - bug-fix in description of installation:
+        destination of help.vim is after/syntax
+          Unix:    ~/.vim/after/syntax
+          Windows: c:\vimfiles\after\syntax
+        (was syntax/after)
+    
+    Consists of:
+      crefvim.vim    V 1.0.0  not changed
+      crefvimdoc.txt V 1.0.1      changed
+      crefvim.txt    V 1.0.0  not changed
+      help.vim       V 1.0.0  not changed
 
 
 ------------------------------------------------------------------------------
