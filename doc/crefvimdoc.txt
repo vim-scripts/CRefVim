@@ -5,8 +5,8 @@
                                                                  *crefvimdoc*
                                Project CRefVim
                             ======================
-                                Version 1.0.1
-                                13. Apr. 2003
+                                Version 1.0.2
+                                14. Dec. 2003
                          
 
                     (c) 2002, 2003 by Christian Habermann
@@ -23,7 +23,7 @@
   "The GNU C Library Reference Manual" is copyright (c) 1993 - 2002 by the
   Free Software Foundation, Inc.
   Enhancements to this GNU-manual and modifications of this GNU-manual
-  in context with CRefVim where done by Christian Habermann.
+  in context with CRefVim were done by Christian Habermann.
   
   In the following this file (crefvimdoc.txt) and the C-reference manual
   (crefvim.txt) is an entity called "document".
@@ -237,7 +237,7 @@ Documentation License (GNU FDL) version 1.1 or later (see |crvdoc-licFDL| for
 license).
 
 The most sections about the standard C library functions, macros and types
-where extracted from "The GNU C Library Reference Manual", edition 0.10.
+were extracted from "The GNU C Library Reference Manual", edition 0.10.
 "The GNU C Library Reference Manual" is copyright (c) 1993 - 2002 by the
 Free Software Foundation, Inc.
 
@@ -1635,7 +1635,7 @@ Appendix F  HISTORY                                           *crvdoc-history*
 Project CRefVim
   
   The most sections about the standard C library functions, macros and types
-  where extracted from "The GNU C Library Reference Manual", edition 0.10.
+  were extracted from "The GNU C Library Reference Manual", edition 0.10.
   "The GNU C Library Reference Manual" is copyright (c) 1993 - 2002 by the
   Free Software Foundation, Inc.
   At  http://www.gnu.org/manual/glibc-2.2.5/libc.html  the original version
@@ -1650,6 +1650,7 @@ Project CRefVim
       crefvimdoc.txt  V 0.1.0, initial version
       crefvim.txt     V 0.1.0, initial version
       help.vim        V 0.1.0, initial version
+
 
   - V 0.2.0  5. Apr. 2003
     no release
@@ -1666,6 +1667,7 @@ Project CRefVim
       crefvim.txt V 0.1.0, not changed
       help.vim    V 0.1.0, not changed
 
+
   - V 1.0.0  6. Apr. 2003
     no changes, first release
     Consists of:
@@ -1673,6 +1675,7 @@ Project CRefVim
       crefvimdoc.txt V 1.0.0
       crefvim.txt    V 1.0.0
       help.vim       V 1.0.0
+
 
   - V 1.0.1  13. Apr. 2003
     crefvimdoc.txt:  
@@ -1686,6 +1689,17 @@ Project CRefVim
       crefvim.vim    V 1.0.0  not changed
       crefvimdoc.txt V 1.0.1      changed
       crefvim.txt    V 1.0.0  not changed
+      help.vim       V 1.0.0  not changed
+
+
+  - V 1.0.2  15. Dec. 2003
+    crefvimdoc.txt:  some typos fixed
+    crefvim.txt:     some typos fixed
+    
+    Consists of:
+      crefvim.vim    V 1.0.0  not changed
+      crefvimdoc.txt V 1.0.2      changed
+      crefvim.txt    V 1.0.1      changed
       help.vim       V 1.0.0  not changed
 
 

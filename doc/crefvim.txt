@@ -5,8 +5,8 @@
                                                        *crefvim* *C-Reference*
                               C-Reference for Vim
                             ======================
-                                Version 1.0.0
-                                 6. Apr. 2003
+                                Version 1.0.1
+                                14. Dec. 2003
 
                     (c) 2002, 2003 by Christian Habermann
                      christian(at)habermann-net(point)de
@@ -6559,11 +6559,11 @@ II.12.1  Error Conditions                                       *crv-libMHErr*
 All functions declared in§<math.h>§do handle errors in a very similar way.
 
 If an argument is outside the domain over a function is defined a domain
-error occures, then§errno§is set to§EDOM§. The value that the function returns
+error occurs, then§errno§is set to§EDOM§. The value that the function returns
 is implementation specific.
 
 If the result of a function cannot be represented in the type of return value,
-a range error occures.
+a range error occurs.
 If the result overflows, the function returns the value of the macro
 §HUGE_VAL§, with the same sign as the correct value of the function;
 §errno§is set to§ERANGE§. 
@@ -8077,7 +8077,7 @@ This function chooses one of three ways in which receipt of the signal§sig§is
 to be handled, these ways are:
                                                    *crv-SIG_DFL* *crv-SIG_IGN*
   - If the value of§handler§is§SIG_DFL§, default handling for that signal
-    occures.
+    occurs.
   - If the value of§handler§is§SIG_IGN§, the signal is ignored.
   - If the value of§handler§points to a function, that function is called
     with the argument of the type of signal.
@@ -9291,7 +9291,7 @@ A format string for input has the following syntax:
            | §unsigned char§
            |
     §h§    | Specifies that a following§d, i, o, u, x, X, n§conversion applies
-           | to an argument with type pointer to§short int§or§unsigned short$.
+           | to an argument with type pointer to§short int§or§unsigned short§.
            |
     §l§    | Specifies that a following§d, i, o, u, x, X, n§conversion applies
            | to an argument with type pointer to§long int§or
@@ -9442,7 +9442,7 @@ Synopsis~
  §int sprintf(char *s, const char *format, ...);§
 
 Return~
-<0: error occured
+<0: error occurred
 number of characters stored in array, not including terminating null character
 
 Description~
@@ -9459,7 +9459,7 @@ Synopsis~
  §int snprintf(char *s, size_t size, const char *format, ...);§
 
 Return~
-<0: error occured
+<0: error occurred
 The return value is the number of characters which would be generated for the
 given input, excluding the trailing null. If this value is greater or equal
 to§size§, not all characters from the result have been stored in§s§.
@@ -9557,7 +9557,7 @@ Synopsis~
 
 Return~
 The return value is the number of successful assignments. If there is a match
-error, this number can be viewer than provided. If an input error occurres
+error, this number can be fewer than provided. If an input error occurs
 before any matches are performed, then§EOF§is returned.
 
 Description~
@@ -12491,7 +12491,7 @@ Synopsis~
 
 Return~
 wide character read from stream, or§WEOF§if an error or an end-of-file
-condition occured
+condition occurred
 
 Description~
 This function reads the next wide character from the stream§stream§and returns
