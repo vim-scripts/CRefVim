@@ -5,8 +5,8 @@
                                                        *crefvim* *C-Reference*
                               C-Reference for Vim
                             ======================
-                                Version 1.0.2
-                                4. Mar. 2004
+                                Version 1.0.3
+                                27. Nov. 2004
 
                      (c) 2002-2004 by Christian Habermann
                    christian (at) habermann-net (point) de
@@ -2842,6 +2842,25 @@ Example: >
   }
   
 
+Hint: When type casting a volatile variable, the volatile qualifier will be
+      lost if it is omitted in the type cast operator.
+ 
+Example: >
+  volatile int ptrA;
+  long ptrB;
+
+  ...
+
+  ptrA = (int *)ptrB;             // ATTENTION: after this, ptrA is no
+                                  //            longer volatile!
+
+  ptrA = (volatile int *)ptrB;    // ptrA is still volatile
+
+  
+
+
+
+
 ------------------------------------------------------------------------------
 I.5.13  Pointers                                              *crv-dtPointers*
 
@@ -2927,6 +2946,8 @@ Example: >
   funcPtr = anyFunction;          // assign function to pointer
 
   c = funcPtr(2, 3);              // call via function pointer
+
+
 Example: >
   int sum(int a, int b)
   {
@@ -2946,6 +2967,30 @@ Example: >
     
     printf("%d\n", a);   // 5 is printed
   }
+
+
+Example, call function at absolut address: >
+
+  // call a function of type  int Func(int nNumOf)
+  // located at address 0x42000
+  
+  // typedefs make usage of function pointers a little bit clearer
+  
+  typedef  int (*FuncPtr)( int nNumOf );
+
+  
+  int main(void)
+  {
+    FuncPtr  func1;
+
+    ...
+
+    func1  = (FuncPtr)0x42000;    // assign address to function pointer
+
+    result = func1( n );          // call function func1 points to
+  }
+
+
 
 
 I.5.13.3  Arithmetics                                   *crv-dtPtrArithmetics*
@@ -3174,7 +3219,7 @@ I.5.15.3  Character                                          *crv-dtConstChar*
 -------------------
 A character constant is any character from the source character set enclosed 
 in apostrophes.
-See escape sequences (-> |crv-escSequences|) for special characters.
+See escape sequences (-> |crv-lngEscSeq|) for special characters.
 
 Examples: >
   char a;
@@ -3686,7 +3731,7 @@ ability to pass control directives to the compiler.
 A C-preprocessor directive is invoked by a$#$. Opposed to a C-statement a
 C-preprocessor directive is NOT terminated by a semicolon ($;$), instead of
 it is terminated by the new-line. To span a directive over several lines
-the "line-escape"$\$can be used (see |crv-escSequences|).
+the "line-escape"$\$can be used (see |crv-lngEscSeq|).
 Example: >
  #define MEAS_CYCLES   (3  \
                         +  \

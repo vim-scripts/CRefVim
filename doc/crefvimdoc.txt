@@ -5,8 +5,8 @@
                                                                  *crefvimdoc*
                                Project CRefVim
                             ======================
-                                Version 1.0.3
-                                4. Mar. 2004
+                                Version 1.0.4
+                                27. Nov. 2004
                          
 
                      (c) 2002-2004 by Christian Habermann
@@ -1720,6 +1720,21 @@ Project CRefVim
       crefvimdoc.txt V 1.0.3      changed
       crefvim.txt    V 1.0.2      changed
       help.vim       V 1.0.1      changed
+
+
+  - V 1.0.4  27. Nov. 2004
+    crefvimdoc.txt:  history and version numbers updated
+
+    crefvim.txt:     - I.5.13.2: example on how to assign an absolute address
+                       to a function pointer added
+                     - I.5.12: hint on volatile added
+                     - dead tag corrected
+    
+    Consists of:
+      crefvim.vim    V 1.0.0  not changed
+      crefvimdoc.txt V 1.0.4      changed
+      crefvim.txt    V 1.0.3      changed
+      help.vim       V 1.0.1  not changed
 
 
 
